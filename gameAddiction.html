@@ -303,7 +303,8 @@ h1, h2, p {
 <ul class="quiz-step step5">
   <li class="question">
       <div class="question-wrap">
-          <b><p>Question 10: Do you find yourself spendending much more time playing than you used to, playing video games?</p></b>
+          <b><p>Question 10: Do you find yourself spendending much more time playing than you used to, playing video games?
+          </p></b>
       </div>
   </li>
   <li class="quiz-answer low-value" data-quizIndex="2">
@@ -328,7 +329,7 @@ h1, h2, p {
   <li class="quiz-answer low-value" data-quizIndex="2">
     <div class="answer-wrap3">
       <p class="float-right">
-      <u><p class="answer-text" onclick="calculate()" value="display">Curious to Know Your Result?</p></u>
+      <u><p class="answer-text" onclick="calculate()" value="display">Click to check out your results</p></u>
       </p>
     </div>
   </li>
@@ -341,23 +342,23 @@ h1, h2, p {
         function calculate() {
           if (game === 0) {
             console.log("Level: None");
-            document.getElementById("res_btn").innerHTML += '<a href="nogame.html" class="btn btn-dark">Click to View Your Result</a>';
+            document.getElementById("res_btn").innerHTML += '<a href="noGame.html" class="btn btn-dark">Click to View Your Result</a>';
           }
           if (game > 0 && game <= 3) {
             console.log("Level: Low");
-            document.getElementById("res_btn").innerHTML += '<a href="lowgame.html" class="btn btn-dark">Click to View Your Result</a>';
+            document.getElementById("res_btn").innerHTML += '<a href="lowGame.html" class="btn btn-dark">Click to View Your Result</a>';
           }
           if (game > 3 && game < 5 || game === 5) {
             console.log("Level: Moderate");
-            document.getElementById("res_btn").innerHTML += '<a href="moderateepression.html" class="btn btn-dark">Click to View Your Result</a>';
+            document.getElementById("res_btn").innerHTML += '<a href="moderateGame" class="btn btn-dark">Click to View Your Result</a>';
           }
           if (game > 5 && game < 8 || game === 8) {
             console.log("Level: High");
-            document.getElementById("res_btn").innerHTML += '<a href="severegame.html" class="btn btn-dark">Click to View Your Result</a>';
+            document.getElementById("res_btn").innerHTML += '<a href="severeGame.html" class="btn btn-dark">Click to View Your Result</a>';
           }
           if (game > 8 && game < 10 || game === 10) {
             console.log("Level: Extreme");
-            document.getElementById("res_btn").innerHTML += '<a href="severegame.html" class="btn btn-dark">Click to View Your Result</a>';
+            document.getElementById("res_btn").innerHTML += '<a href="severeGame.html" class="btn btn-dark">Click to View Your Result</a>';
           }
         }
       </script>
